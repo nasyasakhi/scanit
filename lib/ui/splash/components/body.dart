@@ -24,12 +24,8 @@ class _BodyState extends State<Body> {
       "subtitle": "Unlock endless possibilities and \n connect effortlessly with just one scan",
       "image": "assets/images/splash_01.png"
     },
-    {
-      "title": "Create your own barcode !",
-      "subtitle": "Turn your ideas into QR codes \n and make sharing faster and easier",
-      "image": "assets/images/splash_01.png"
-    },
   ];
+  
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +92,7 @@ class _BodyState extends State<Body> {
                   const SizedBox(height: 10),
                   GestureDetector(
                     onTap: () {
-                      // Navigator.pushNamed(context, '/scanner');
+                      Navigator.pushNamed(context, '/scanner');
                     },
                     child: const Text(
                       "Already Have An Account? Log In",
