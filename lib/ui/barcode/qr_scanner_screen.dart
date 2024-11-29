@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+import 'package:qr_scanner/const.dart';
 import 'package:share_plus/share_plus.dart';
 
 class QrScannerScreen extends StatefulWidget {
@@ -120,7 +121,7 @@ class _QrScannerScreenState extends State<QrScannerScreen> {
       left: 0,
       right: 0,
       child: Container(
-        color: Colors.orange,
+        color: primaryColor,
         padding: const EdgeInsets.symmetric(vertical: 10),
         child: const Text(
           'Scan QR Code !',
@@ -204,10 +205,10 @@ class _QrScannerScreenState extends State<QrScannerScreen> {
           curve: Curves.easeInOut,
           padding: const EdgeInsets.symmetric(vertical: 15),
           decoration: BoxDecoration(
-            color: _activeButtonIndex == index ? Colors.green : Colors.white,
+            color: _activeButtonIndex == index ? secondaryColor : Colors.white,
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
-              color: Colors.green,
+              color: secondaryColor,
               width: 2,
             ),
           ),
@@ -215,7 +216,7 @@ class _QrScannerScreenState extends State<QrScannerScreen> {
             label,
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: _activeButtonIndex == index ? Colors.white : Colors.green,
+              color: _activeButtonIndex == index ? Colors.white : secondaryColor,
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
