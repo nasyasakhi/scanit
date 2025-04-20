@@ -22,6 +22,10 @@ A Mobile-based QR Scanner and Generator App.
 
 - mobile_scanner
 - pretty_qr_code
+- permission_handler  
+- share_plus  
+- screenshot  
+- cupertino_icons
 
 
 ## Usage
