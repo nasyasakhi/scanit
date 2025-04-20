@@ -44,8 +44,11 @@ dependencies:
   permission_handler: ^11.3.1
   #library untuk generate dari data mentah(raw) ke QR code
   pretty_qr_code: ^3.3.0
+  # library untuk berbagi data, seperti teks atau file ke aplikasi lain
   share_plus: ^10.1.2
   path_provider: ^2.1.5
+  # library untuk menangkap tangkapan layar widget sebagai gambar
+  screenshot: ^3.0.0
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:qr_scanner/ui/barcode/qr_generator_screen.dart';
 import 'package:qr_scanner/ui/barcode/qr_scanner_screen.dart';
-import 'package:qr_scanner/ui/splash/components/body.dart';
-import 'package:qr_scanner/ui/splash/splash_screen.dart';
+import 'package:qr_scanner/ui/home/home_screen.dart';
+import 'package:qr_scanner/ui/splash_screen.dart';
 
 void main() {
   runApp(const QrScannerApp());
@@ -15,18 +15,19 @@ class QrScannerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "ScanIt",
+      title: "QR Scanner App",
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
-        useMaterial3: true
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+        useMaterial3: true,
+        
       ),
       initialRoute: "/",
       routes: {
-        '/' : (context) => const SplashScreen(),
-        '/scanner' : (context) => const QrScannerScreen(),
-        '/generator' : (context) => const QrGeneratorScreen(),
-        '/body' : (context) => const Body(),
-      }
+        "/": (context) => const SplashScreen(),
+        "/home": (context) => const HomeScreen(),
+        "/scanner": (context) => const QrScannerScreen(),
+        "/generator": (context) => const QrGeneratorScreen(),
+      },
     );
   }
 }
