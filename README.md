@@ -15,8 +15,8 @@ A Mobile-based QR Scanner and Generator App.
 
 **Front-End:** 
 
-- Dart v.3.2.4 (stable)
-- Flutter v.3.24.5 (stable channel)
+- Dart v.3.6.1 (stable)
+- Flutter v.3.27.2 (stable channel)
 
 **Dependencies:** 
 
